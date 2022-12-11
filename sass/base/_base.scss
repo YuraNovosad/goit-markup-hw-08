@@ -1,0 +1,67 @@
+a {
+   text-decoration: none;
+   color: inherit;
+   font-family: inherit;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+   padding: 0px;
+   margin: 0px;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+body {
+   background-color: var(--background-color);
+   color: var(--primery-text-color);
+   font-family: var(--main-font);
+}
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+.button-pointer {
+   cursor: pointer;
+}
+
+textarea {
+   resize: none;
+}
+
+.container {
+   width: 1200px;
+   padding: 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.section-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: calc(42 / 36);
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--title-text-color);
+   margin-bottom: 50px;
+}

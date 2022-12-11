@@ -1,0 +1,24 @@
+.logo {
+   font-family: var(--second-font);
+   font-weight: 700;
+   font-size: 26px;
+   line-height: calc(31 / 26);
+   letter-spacing: 0.03em;
+   color: var(--accent-color);
+}
+
+// .logo-first {
+//    color: var(--accent-color);
+// }
+
+.logo--black {
+   color: #000000;
+}
+
+// .logo-second {
+//    color: #000000;
+// }
+
+.logo--footer {
+   color: #ffffff;
+}
