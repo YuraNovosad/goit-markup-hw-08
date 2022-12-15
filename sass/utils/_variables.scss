@@ -12,9 +12,11 @@ $colors: (
   "borders-color": #afb1b8,
   "hover-accent": #188ce8,
 );
+
 @function getcolor($key) {
   @return map-get($colors, $key);
 }
+
 $phone: 480px;
 $tablet: 768px;
 $desktop: 1200px;
