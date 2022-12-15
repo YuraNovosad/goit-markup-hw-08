@@ -1,24 +1,23 @@
 .logo {
-   font-family: var(--second-font);
-   font-weight: 700;
-   font-size: 26px;
-   line-height: calc(31 / 26);
-   letter-spacing: 0.03em;
-   color: var(--accent-color);
+  color: getcolor(accent);
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
-
-// .logo-first {
-//    color: var(--accent-color);
-// }
-
-.logo--black {
-   color: #000000;
+.header__logo {
+  padding: 16px 0;
+  margin-right: 0;
+  &--black {
+    color: #000;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 90px;
+  }
 }
-
-// .logo-second {
-//    color: #000000;
-// }
-
-.logo--footer {
-   color: #ffffff;
+.footer__logo {
+  margin-right: 0;
+  &--white {
+    color: getcolor(primary-white);
+  }
 }
