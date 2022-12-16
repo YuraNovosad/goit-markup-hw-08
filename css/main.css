@@ -20,7 +20,7 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: #757575;
   letter-spacing: 0.03em;
   background-color: #ffffff;
 }
@@ -37,7 +37,7 @@ p {
 }
 
 h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h1::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection {
-  color: #fff;
+  color: #ffffff;
   background-color: #2196f3;
 }
 
@@ -48,7 +48,7 @@ h1::selection,
 h5::selection,
 h6::selection,
 p::selection {
-  color: #fff;
+  color: #ffffff;
   background-color: #2196f3;
 }
 
@@ -125,6 +125,7 @@ button {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 30px;
+  color: #212121;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
@@ -548,7 +549,7 @@ button {
   height: 100vh;
   padding: 40px;
   z-index: 2;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1009,6 +1010,7 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+  color: #212121;
 }
 @media screen and (min-width: 768px) {
   .benefits-list__title {
@@ -1083,6 +1085,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  color: #212121;
 }
 .team-list__member {
   background-color: #ffffff;

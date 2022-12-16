@@ -12,10 +12,12 @@
   overflow-y: scroll;
   transition: opacity 390ms $transition-function;
   background-color: rgba(0, 0, 0, 0.2);
+
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
+
   &.is-hidden .modal {
     transform: scale(0.9);
     transition: transform 550 $transition-function;
@@ -28,7 +30,7 @@
   width: 320px;
   min-height: 581px;
   transform: scale(1);
-  background-color: getcolor(primary-white);
+  background-color: $primary-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -58,12 +60,12 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: getcolor(primary-white);
+  background-color: $primary-white;
   fill: #000;
   transition: fill 250ms $transition-function;
   &:focus,
   &:hover {
-    fill: getcolor(accent);
+    fill: $accent-color;
   }
 }
 .form {
@@ -73,7 +75,7 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $primary-title;
     margin-bottom: 12px;
     @media screen and (min-width: 1200px) {
       font-size: 20px;
@@ -89,12 +91,13 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: getcolor(primary-p);
+    color: $primary-text;
     margin-bottom: 10px;
     &:nth-child(5) {
       margin-bottom: 20px;
     }
   }
+
   &__input {
     width: 100%;
     height: 40px;
@@ -103,23 +106,26 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color 250ms $transition-function;
-    color: getcolor(primary-p);
+    color: $primary-text;
+
     &::placeholder {
       font-size: 12px;
       line-height: 1.16;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
     }
+
     &:hover,
     &:focus {
       outline: none;
-      border: 1px solid #2196f3;
+      border: 1px solid $accent-color;
     }
   }
 
   &__wrapper {
     position: relative;
   }
+
   &__icon {
     transition: fill 250ms $transition-function;
     position: absolute;
@@ -128,9 +134,10 @@
     left: 12px;
     .form__input:hover + &,
     .form__input:focus + & {
-      fill: getcolor(accent);
+      fill: $accent-color;
     }
   }
+
   &__textarea {
     height: 120px;
     resize: none;
@@ -143,15 +150,16 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     padding: 10px 52px;
-    background-color: getcolor(accent);
-    color: getcolor(primary-white);
+    background-color: $accent-color;
+    color: $primary-white;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+
     &:hover,
     &:focus {
-      background-color: getcolor(hover-accent);
+      background-color: $accent-hover;
     }
   }
 }
@@ -164,6 +172,7 @@
   @media screen and (max-width: 1199px) {
     margin-right: 15px;
   }
+
   &__input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -171,7 +180,7 @@
   }
 
   &__input:checked ~ &__title::before {
-    background-color: getcolor(accent);
+    background-color: $accent-color;
     background-image: url("../images/icon-check.svg");
     background-repeat: no-repeat;
     background-position: 65% 60%;
@@ -196,7 +205,7 @@
     line-height: 1.16;
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $primary-text;
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.71;
@@ -207,7 +216,7 @@
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit;
-    color: getcolor(accent);
+    color: $accent-color;
     text-decoration: underline;
   }
 }

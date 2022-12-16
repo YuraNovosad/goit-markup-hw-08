@@ -10,9 +10,11 @@
         margin-bottom: 30px;
       }
     }
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
     }
+
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 3 * 30px) / 4);
     }
@@ -24,6 +26,8 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
+    color: $primary-title;
+    
     @media screen and (min-width: $tablet) {
       text-align: left;
     }
@@ -31,7 +35,7 @@
   &__text {
     font-size: 14px;
     line-height: 1.71;
-    color: getcolor(primary-p);
+    color: $primary-text;
   }
   &__container {
     display: flex;
@@ -41,6 +45,6 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-color: getcolor(secondary-bg);
+    background-color: $background-color-second;
   }
 }

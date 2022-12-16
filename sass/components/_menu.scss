@@ -18,7 +18,7 @@
   outline: none;
   &:hover,
   &:focus {
-    fill: getcolor(accent);
+    fill: $accent-color;
   }
   @media screen and (min-width: $tablet) {
     display: none;
@@ -37,7 +37,7 @@
   height: 100vh;
   padding: 40px;
   z-index: 2;
-  background-color: #fff;
+  background-color: $primary-white;
   transform: translateX(100%);
   transition: transform 250ms $transition-function;
   transition-delay: 100ms;
@@ -57,10 +57,10 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: getcolor(primary-h);
+    color: $primary-title;
     &--current,
     &:hover {
-      color: getcolor(accent);
+      color: $accent-color;
     }
   }
 }
@@ -75,15 +75,15 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: getcolor(primary-p);
+    color: $primary-text;
     &:hover,
     &:focus {
-      color: getcolor(accent);
+      color: $accent-color;
     }
     &--big {
       font-size: 34px;
       line-height: 40px;
-      color: getcolor(accent);
+      color: $accent-color;
       @media screen and (max-width: 440px) {
         font-size: 24px;
         line-height: 1.16;
@@ -106,10 +106,10 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: getcolor(accent);
+    color: $accent-color;
     &:hover,
     &:focus {
-      color: getcolor(hover-accent);
+      color: $accent-hover;
     }
   }
 }

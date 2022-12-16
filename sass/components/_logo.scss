@@ -1,5 +1,5 @@
 .logo {
-  color: getcolor(accent);
+  color: $accent-color;
   font-family: $secondaryFont;
   font-weight: 700;
   font-size: 26px;
@@ -18,6 +18,6 @@
 .footer__logo {
   margin-right: 0;
   &--white {
-    color: getcolor(primary-white);
+    color: $primary-white;
   }
 }

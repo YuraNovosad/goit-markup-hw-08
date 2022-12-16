@@ -5,13 +5,16 @@
   row-gap: 15px;
   flex-wrap: wrap;
   justify-content: flex-start;
+
   @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 30px;
   }
+  
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
+
   &__item {
     padding: 6px 26px;
     font-family: "Roboto";
@@ -20,8 +23,9 @@
     line-height: 1.62;
     border-radius: 4px;
     border: none;
-    background-color: getcolor(secondary-bg);
-    color: getcolor(primary-h);
+    background-color: $background-color-second;
+    color: $primary-title;
+
     &:hover,
     &:focus,
     &:active {
@@ -31,8 +35,8 @@
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
       cursor: pointer;
-      background-color: getcolor(accent);
-      color: getcolor(primary-white);
+      background-color: $accent-color;
+      color: $primary-white;
     }
   }
 }
@@ -42,19 +46,24 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
   }
+
   &__item {
     width: 100%;
-    background-color: getcolor(primary-white);
+    background-color: $primary-white;
+
     @media screen and (min-width: $tablet) {
       flex-basis: calc((100% - 1 * 30px) / 2);
     }
+
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 2 * 30px) / 3);
     }
   }
+
   &__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
@@ -66,6 +75,7 @@
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
+  
   &__borders {
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       flex-grow: 1;
@@ -75,18 +85,20 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
   }
+
   &__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: getcolor(primary-h);
+    color: $primary-title;
   }
+
   &__text {
     font-size: 16px;
     line-height: 1.87;
-    color: getcolor(primary-p);
+    color: $primary-text;
   }
 }
 
@@ -98,21 +110,25 @@
   height: 100%;
   font-size: 18px;
   line-height: 1.55;
-  color: getcolor(primary-white);
+  color: $primary-white;
   text-align: left;
   padding: 20px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: $phone) {
     padding: 77px 24px;
   }
+
   @media screen and (min-width: $tablet) {
     padding: 49px 24px 77px 24px;
   }
+
   @media screen and (min-width: $desktop) {
     padding: 63px 24px;
   }
+
   .project-list__link:hover &,
   .project-list__link:focus & {
     transform: translateY(0);

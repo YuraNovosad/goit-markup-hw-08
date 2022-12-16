@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: getcolor(hero-footer-color);
+  background-color: $hero-footer-backgraund;
   &-list {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +17,7 @@
       flex-wrap: nowrap;
     }
   }
+
   &-item {
     @media screen and (min-width: $desktop) {
       &:nth-child(2) {
@@ -24,19 +25,22 @@
         margin-left: 70px;
         padding-top: 12px;
       }
+
       &:last-child {
         padding-top: 12px;
       }
     }
+
     &__title {
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
       text-transform: uppercase;
-      color: getcolor(primary-white);
+      color: $primary-white;
       margin-bottom: 20px;
     }
   }
+
   &-form__button {
     font-weight: 700;
     font-size: 16px;
@@ -47,15 +51,16 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    color: getcolor(primary-white);
-    background-color: getcolor(accent);
+    color: $primary-white;
+    background-color: $accent-color;
     border: none;
     padding: 10px 62px 10px 28px;
     margin-left: 12px;
     position: relative;
+
     &:hover,
     &:focus {
-      background-color: getcolor(hover-accent);
+      background-color: $accent-hover;
     }
   }
   &-form__email {
@@ -67,17 +72,20 @@
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
-    color: getcolor(primary-white);
+    color: $primary-white;
     transition: border 250ms $transition-function;
+
     @media screen and (min-width: $desktop) {
       margin: 0;
       width: 365px;
     }
+
     &:hover,
     &:focus {
       outline: none;
-      border-color: getcolor(accent);
+      border-color: $accent-color;
     }
+
     &-form::placeholder {
       font-size: 16px;
       line-height: 1.25;
@@ -87,7 +95,7 @@
   }
   &-form__icon {
     position: absolute;
-    fill: getcolor(primary-white);
+    fill: $primary-white;
     right: 28px;
     bottom: 13px;
   }
@@ -95,9 +103,11 @@
 
 .address {
   margin-top: 20px;
+
   &-list__item:not(:first-child) {
     margin-top: 9px;
   }
+
   &-list__link {
     font-style: normal;
     font-weight: 400;
@@ -105,16 +115,18 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
     &:hover,
     &:focus {
-      color: getcolor(accent);
+      color: $accent-color;
     }
   }
+
   .place {
-    color: getcolor(primary-white);
+    color: $primary-white;
     &:hover,
     &:focus {
-      color: getcolor(accent);
+      color: $accent-color;
     }
   }
 }
@@ -122,8 +134,9 @@
 .media-list {
   @include flexible();
   gap: 10px;
+
   &__link {
-    fill: getcolor(primary-white);
+    fill: $primary-white;
     display: flex;
     width: 44px;
     height: 44px;
@@ -132,8 +145,8 @@
     background-color: rgba(255, 255, 255, 0.1);
     &:hover,
     &:focus {
-      background-color: getcolor(accent);
-      fill: getcolor(primary-white);
+      background-color: $accent-color;
+      fill: $primary-white;
     }
   }
 }
