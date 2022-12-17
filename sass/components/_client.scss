@@ -1,5 +1,5 @@
 .client-list {
-  @include flexible();
+  @include flex_jus-c_cen();
   gap: 30px;
   flex-wrap: wrap;
   &__link {

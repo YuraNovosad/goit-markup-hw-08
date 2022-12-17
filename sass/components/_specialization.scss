@@ -1,5 +1,5 @@
 .specialization-list {
-  @include flexible;
+  @include flex_jus-c_cen();
   gap: 30px;
   &__text {
     position: absolute;

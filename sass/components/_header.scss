@@ -20,7 +20,7 @@
   }
 
   &__main-nav {
-    @include align;
+    @include flex_al-i_cen();
     justify-content: space-between;
   }
 
@@ -54,7 +54,7 @@
 
 
 .nav {
-  @include align;
+  @include flex_al-i_cen();
 }
 .contacts-list {
   display: none;
@@ -79,7 +79,7 @@
   }
   
   &__link {
-    @include align;
+    @include flex_al-i_cen();
     @extend %link-style;
     color: $primary-text;
     &:hover,

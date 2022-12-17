@@ -132,7 +132,7 @@
 }
 
 .media-list {
-  @include flexible();
+  @include flex_jus-c_cen();
   gap: 10px;
 
   &__link {

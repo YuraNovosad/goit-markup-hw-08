@@ -1,5 +1,5 @@
 .filter-list {
-  @include flexible;
+  @include flex_jus-c_cen();
   margin-bottom: 40px;
   column-gap: 8px;
   row-gap: 15px;
