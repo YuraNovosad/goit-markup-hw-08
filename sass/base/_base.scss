@@ -8,7 +8,7 @@ body {
   font-family: $mainFont, sans-serif;
   color: $primary-text;
   letter-spacing: 0.03em;
-   background-color:$primary-white;
+  background-color: $primary-white;
 }
 
 h1,
@@ -22,7 +22,6 @@ p {
   padding: 0;
 }
 
-
 h2::selection,
 h3::selection,
 h4::selection,
@@ -30,13 +29,25 @@ h1::selection,
 h5::selection,
 h6::selection,
 p::selection {
-  color:$primary-white;
+  color: $primary-white;
   background-color: $accent-color;
 }
-
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a {
+   text-decoration: none;
+   transition-duration: 250ms;
+   transition-timing-function: $transition-function;
+   transition-property: fill, color, background-color, box-shadow;
+}
+
+button {
+   transition-duration: 250ms;
+   transition-timing-function: $transition-function;
+   transition-property: color, background-color, box-shadow, fill;
 }

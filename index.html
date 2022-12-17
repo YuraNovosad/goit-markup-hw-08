@@ -70,7 +70,7 @@
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
+        <!-- <div class="menu-container js-menu-container" id="mobile-menu">
           <button
             class="menu-toggle js-close-menu"
             type="button"
@@ -121,7 +121,7 @@
               <a href="" class="mobile-social__link">LinkedIn</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
     <main>
@@ -734,6 +734,103 @@
         </div>
       </div>
     </footer>
+
+    <!--  -->
+   <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button" aria-label="Кнопка закриття мобільного меню">
+         <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+         </svg>
+      </button>
+      <ul class="mobile-nav">
+         <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+         </li>
+         <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+         </li>
+         <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Контакти</a>
+         </li>
+      </ul>
+      <ul class="mobile-contacts">
+         <li class="mobile-contacts__item">
+            <a href="" class="mobile-contacts__link mobile-contacts__link--big">+38 096 111 11 11</a>
+         </li>
+         <li class="mobile-contacts__item">
+            <a href="" class="mobile-contacts__link">info@devstudio.com</a>
+         </li>
+      </ul>
+      <ul class="mobile-social">
+         <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a>
+         </li>
+         <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a>
+         </li>
+         <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a>
+         </li>
+         <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button type="button" class="close__button" name="Кнопка закрытия модального окна" data-modal-close>
+            <svg width="18px" height="18px">
+               <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+         </button>
+         <form class="js-speaker-form form">
+            <p class="form__title">
+               Залиште свої дані, ми вам передзвонимо
+            </p>
+   
+            <label for="username" class="form__label">
+               Ім'я
+               <span class="form__wrapper">
+                  <input type="text" name="name" id="username" class="form__input" required />
+                  <svg width="20" height="20" class="form__icon">
+                     <use href="./images/symbol-defs.svg#icon-person"></use>
+                  </svg>
+               </span>
+            </label>
+            <label for="number" class="form__label">Телефон
+               <span class="form__wrapper">
+                  <input type="tel" name="phone" id="number" class="form__input" required />
+                  <svg width="20" height="20" class="form__icon">
+                     <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+               </span>
+            </label>
+            <label for="usermail" class="form__label">Пошта
+               <span class="form__wrapper">
+                  <input type="email" name="mail" id="usermail" class="form__input" required />
+                  <svg width="20" height="20" class="form__icon">
+                     <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+               </span>
+            </label>
+            <label for="comment" class="form__label">Коментар
+               <textarea name="feedback" id="comment" class="form__input form__textarea"
+                  placeholder="Введіть текст"></textarea>
+            </label>
+            <div class="checkbox">
+               <input type="checkbox" name="policy" id="check" value="yes" class="checkbox__input" required />
+               <label for="check" class="checkbox__title">Погоджуюся з розсилкою та приймаю
+                  <a href="" class="checkbox__link">Умови договору</a></label>
+            </div>
+            <button type="submit" class="form__button" name="Кнопка отпрвки формы">
+               Відправити
+            </button>
+         </form>
+      </div>
+   </div> -->
+
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

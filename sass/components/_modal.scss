@@ -10,7 +10,7 @@
   z-index: 3;
   opacity: 1;
   overflow-y: scroll;
-  transition: opacity 390ms $transition-function;
+  transition: opacity $transition-function;
   background-color: rgba(0, 0, 0, 0.2);
 
   &.is-hidden {
@@ -20,13 +20,13 @@
 
   &.is-hidden .modal {
     transform: scale(0.9);
-    transition: transform 550 $transition-function;
+    transition: transform $transition-function;
   }
 }
 
 .modal {
   position: relative;
-  transition: transform 550ms $transition-function;
+  transition: transform $transition-function;
   width: 320px;
   min-height: 581px;
   transform: scale(1);
@@ -62,7 +62,7 @@
   cursor: pointer;
   background-color: $primary-white;
   fill: #000;
-  transition: fill 250ms $transition-function;
+  transition: fill $transition-function;
   &:focus,
   &:hover {
     fill: $accent-color;
@@ -105,7 +105,7 @@
     margin-top: 4px;
     border-radius: 4px;
     padding-left: 42px;
-    transition: border-color 250ms $transition-function;
+    transition: border-color $transition-function;
     color: $primary-text;
 
     &::placeholder {
@@ -127,7 +127,7 @@
   }
 
   &__icon {
-    transition: fill 250ms $transition-function;
+    transition: fill $transition-function;
     position: absolute;
     bottom: 0;
     transform: translateY(-50%);
@@ -150,6 +150,8 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     padding: 10px 52px;
+   //  margin-left: auto;
+   //  margin-right: auto;
     background-color: $accent-color;
     color: $primary-white;
     border: none;
@@ -186,7 +188,7 @@
     background-position: 65% 60%;
     border-color: transparent;
     background-origin: border-box;
-    transition: background-color 250ms $transition-function;
+    transition: background-color $transition-function;
   }
   &__title::before {
     content: "";
@@ -198,7 +200,7 @@
     margin-right: 8px;
     border: 2px solid #000;
     border-radius: 2px;
-    transition: background-color 250ms $transition-function;
+    transition: background-color $transition-function;
   }
   &__title {
     font-size: 12px;

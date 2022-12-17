@@ -1,13 +1,11 @@
 @import "./utils/variables";
 @import "./utils/hidden";
-@import "./base/reset";
-@import "./utils/transitions";
-@import "./base/thumb";
+@import "./base/base";
 @import "./utils/mixins";
-@import "./base/container";
+@import "./components/container";
 @import "./components/section";
 @import "./components/portfolio";
-@import "./components/page-header";
+@import "./components/header";
 @import "./components/menu";
 @import "./components/logo";
 @import "./components/hero.scss";
@@ -16,4 +14,4 @@
 @import "./components/busines";
 @import "./components/team";
 @import "./components/customers";
-@import "./components/page-footer";
+@import "./components/footer";

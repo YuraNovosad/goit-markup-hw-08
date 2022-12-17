@@ -73,7 +73,7 @@
     background-color: transparent;
     padding-left: 16px;
     color: $primary-white;
-    transition: border 250ms $transition-function;
+    transition: border $transition-function;
 
     @media screen and (min-width: $desktop) {
       margin: 0;
